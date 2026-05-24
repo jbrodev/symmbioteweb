@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Symmbiote — The AI that grows into your business</title>
+  <meta name="description" content="A fully local AI operating system that learns your workflows, memory, and voice — and compounds that intelligence over years, never leaving your machine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- living background layers -->
+  <canvas id="synapse" aria-hidden="true"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="aura" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true"></span>
+      SYMMBIOTE
+    </a>
+
+    <nav class="nav-links">
+      <a href="#vision">Vision</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#features">Features</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <span class="status-line" data-reveal>
+          <span class="pulse"></span>
+          LOCAL-FIRST · PRIVATE · EVOLVING
+        </span>
+
+        <h1 data-reveal>
+          The AI that
+          <span class="grad">grows into</span>
+          your business.
+        </h1>
+
+        <p class="subheadline" data-reveal>
+          Symmbiote is a fully local AI operating system that learns your
+          workflows, memory, and voice — then compounds that intelligence over
+          years. No cloud. No data leaving your machine. A true symbiosis.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#waitlist" class="primary-btn">
+            Join the Waitlist
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#architecture" class="secondary-btn">Explore the Architecture</a>
+        </div>
+
+        <div class="hero-stats" data-reveal>
+          <div class="stat">
+            <strong data-count="100" data-suffix="%">0%</strong>
+            <span>Runs locally</span>
+          </div>
+          <div class="stat">
+            <strong>Modular</strong>
+            <span>Built for the long arc</span>
+          </div>
+          <div class="stat">
+            <strong>Extensible</strong>
+            <span>Capabilities &amp; plugins</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card" data-reveal>
+        <div class="terminal-header">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <em>symmbiote — boot</em>
+        </div>
+        <pre id="terminal" aria-label="Symmbiote boot sequence"></pre>
+      </div>
+    </section>
+
+    <!-- live status ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>● SYSTEM LOCAL</span><span>● MEMORY PERSISTENT</span><span>● HUMAN-IN-THE-LOOP</span>
+        <span>● ZERO DATA EGRESS</span><span>● DETERMINISTIC ORCHESTRATION</span><span>● PLUGIN-READY</span>
+        <span>● SYSTEM LOCAL</span><span>● MEMORY PERSISTENT</span><span>● HUMAN-IN-THE-LOOP</span>
+        <span>● ZERO DATA EGRESS</span><span>● DETERMINISTIC ORCHESTRATION</span><span>● PLUGIN-READY</span>
+      </div>
+    </div>
+
+    <!-- VISION -->
+    <section id="vision" class="content-section">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow"><i>01</i> THE VISION</span>
+        <h2>Not another AI assistant. <span class="dim">An operating system for your company.</span></h2>
+      </div>
+
+      <div class="vision-grid">
+        <article class="glass-card" data-reveal>
+          <span class="card-index">/01</span>
+          <h3>Operational Intelligence</h3>
+          <p>The moat is not "agents." It's accumulated workflows, memory, communication patterns, and company-specific intelligence that compounds over time.</p>
+        </article>
+
+        <article class="glass-card" data-reveal>
+          <span class="card-index">/02</span>
+          <h3>Fully Local</h3>
+          <p>Built around local inference with Ollama and modular providers, so businesses keep complete ownership of their data and workflows.</p>
+        </article>
+
+        <article class="glass-card" data-reveal>
+          <span class="card-index">/03</span>
+          <h3>Composable Architecture</h3>
+          <p>Capabilities, tools, plugins, memory systems, and workflows are all modular — designed for years of iteration, not a single demo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section id="architecture" class="content-section">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow"><i>02</i> SYSTEM DESIGN</span>
+        <h2>Built like a platform, <span class="dim">not a demo.</span></h2>
+      </div>
+
+      <div class="architecture-layout">
+        <div class="architecture-column">
+          <article class="architecture-card" data-reveal>
+            <h3>Core Principles</h3>
+            <ul class="mono-list">
+              <li>Deterministic orchestration</li>
+              <li>Zero LangChain leakage</li>
+              <li>Provider abstraction layer</li>
+              <li>Persistent memory systems</li>
+              <li>Centralized safety controls</li>
+              <li>Plugin-ready architecture</li>
+            </ul>
+          </article>
+
+          <article class="architecture-card" data-reveal>
+            <h3>Memory Layers</h3>
+            <ul class="mono-list">
+              <li>Conversation memory</li>
+              <li>Episodic workflow memory</li>
+              <li>Task summaries</li>
+              <li>Retrieval-augmented context</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="code-window" data-reveal>
+          <div class="terminal-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <em>symmbiote/</em>
+          </div>
+<pre class="tree"><span class="d">symmbiote/</span>
+├─ <span class="d">core/</span>        <span class="c"># supervisor + routing</span>
+├─ <span class="d">llm/</span>         <span class="c"># provider abstraction</span>
+├─ <span class="d">capabilities/</span><span class="c"># modular skills</span>
+├─ <span class="d">memory/</span>       <span class="c"># persistent recall</span>
+├─ <span class="d">rag/</span>          <span class="c"># context retrieval</span>
+├─ <span class="d">storage/</span>      <span class="c"># abstracted backends</span>
+├─ <span class="d">safety/</span>       <span class="c"># approval + guardrails</span>
+├─ <span class="d">plugins/</span>      <span class="c"># extend everything</span>
+├─ <span class="d">workflows/</span>    <span class="c"># company logic</span>
+└─ <span class="d">ui/</span>           <span class="c"># native desktop</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="content-section">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow"><i>03</i> FEATURES</span>
+        <h2>A nervous system <span class="dim">built to grow on.</span></h2>
+        <p class="section-sub">
+          Every layer has one job and a stable contract. What ships today is the
+          foundation; what compounds over time is the moat — your memory and
+          workflows, never flashy autonomous agents.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 6h6a4 4 0 0 1 4 4M7 18h6a4 4 0 0 0 4-4"/></svg>
+            </div>
+          </header>
+          <h3>Supervisor Orchestration</h3>
+          <p>Tasks flow through a deterministic submit → approve → process loop, coordinated by a central orchestrator with state, an event bus, and a task queue.</p>
+          <span class="layer">core</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg>
+            </div>
+          </header>
+          <h3>100% Local Inference</h3>
+          <p>Powered by Ollama by default. Your prompts, data, and models stay on your machine — no cloud, nothing leaving the device.</p>
+          <span class="layer">llm</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v5a5 5 0 0 1-5 5h-2.5a4 4 0 0 1-3-1.4L4 14.5a1.6 1.6 0 0 1 2.4-2L8 14"/></svg>
+            </div>
+          </header>
+          <h3>Human-in-the-Loop</h3>
+          <p>Anything outward-facing — email, outreach, automation — waits for your approval. Bounded and deterministic: it asks before it acts.</p>
+          <span class="layer">safety</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 3h5v5M21 3l-7 7M8 21H3v-5M3 21l7-7M21 14v4a3 3 0 0 1-3 3h-4M3 10V6a3 3 0 0 1 3-3h4"/></svg>
+            </div>
+          </header>
+          <h3>Swappable Providers &amp; Models</h3>
+          <p>A stable provider contract behind every backend. Add or switch models from a YAML file, validated against what's installed — with zero framework leakage.</p>
+          <span class="layer">llm</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a3 3 0 0 0-3 3 3 3 0 0 0-2 5.2A3 3 0 0 0 9 17a3 3 0 0 0 6 0 3 3 0 0 0 2-5.8A3 3 0 0 0 15 6a3 3 0 0 0-3-3Z"/><path d="M12 3v18"/></svg>
+            </div>
+          </header>
+          <h3>Persistent Memory + RAG</h3>
+          <p>Embeddings-backed long-term memory and retrieval. The real moat: accumulated workflows and company context that deepen with every task.</p>
+          <span class="layer">rag</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+          </header>
+          <h3>Local-First Storage</h3>
+          <p>Tasks, memory, settings, audit, and traces all live in local SQLite. You own every record — on disk, on your terms.</p>
+          <span class="layer">storage</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h4l2 6 4-14 2 8 2-2h4"/></svg>
+            </div>
+          </header>
+          <h3>Full Observability</h3>
+          <p>Structured logs, an append-only audit trail, and execution trace spans wrap everything consequential — so you always know what it did and why.</p>
+          <span class="layer">observability</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 3a2 2 0 1 1 4 0v2h3a1 1 0 0 1 1 1v3h2a2 2 0 1 1 0 4h-2v4a1 1 0 0 1-1 1h-4v-2a2 2 0 1 0-4 0v2H6a1 1 0 0 1-1-1v-4H3a2 2 0 1 1 0-4h2V6a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+          </header>
+          <h3>Plugin-Ready Architecture</h3>
+          <p>Modular layers with stable contracts. Add backends, agents, stored entities, or background reactions without rewriting what's underneath.</p>
+          <span class="layer">plugins</span>
+        </article>
+
+        <article class="feature-card" data-reveal>
+          <header class="feature-top">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            </div>
+          </header>
+          <h3>Native Desktop App</h3>
+          <p>Lives in your Windows taskbar with tray controls and hotkeys — always a keystroke away, never a browser tab.</p>
+          <span class="layer">gui</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="content-section">
+      <div class="section-heading" data-reveal>
+        <span class="eyebrow"><i>04</i> ROADMAP</span>
+        <h2>Built to evolve, <span class="dim">deliberately.</span></h2>
+        <p class="section-sub">
+          Four phases, one stable spine. Each builds on the last without ever
+          rewriting it — the foundation ships first, the moat compounds after.
+        </p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-track" aria-hidden="true"></div>
+        <div class="timeline-fill" id="timelineFill" aria-hidden="true"></div>
+
+        <div class="tl-item current" data-reveal>
+          <span class="tl-node"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-phase">Phase 1</span>
+              <span class="tl-status">Shipping now</span>
+            </div>
+            <h3>Foundation</h3>
+            <p>The clean, modular nervous system everything grows on — abstractions, config, the LLM provider, local-first storage, and full observability.</p>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <span class="tl-node"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-phase">Phase 2</span>
+              <span class="tl-status">Next</span>
+            </div>
+            <h3>Memory &amp; RAG</h3>
+            <p>Embeddings-backed long-term memory and retrieval — the moat. Accumulated workflows and company context that deepen with every task.</p>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <span class="tl-node"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-phase">Phase 3</span>
+              <span class="tl-status">Planned</span>
+            </div>
+            <h3>Workflows &amp; Agents</h3>
+            <p>Bounded specialist workers, deterministic capability routing, and tools — orchestrated safely, always asking before they act.</p>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <span class="tl-node"></span>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-phase">Phase 4</span>
+              <span class="tl-status">Planned</span>
+            </div>
+            <h3>Desktop GUI</h3>
+            <p>The real taskbar window — native Windows desktop integration with tray controls and hotkeys. Always a keystroke away.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section id="waitlist" class="waitlist-section">
+      <div class="waitlist-card" data-reveal>
+        <span class="eyebrow"><i>05</i> EARLY ACCESS</span>
+        <h2>Watch Symmbiote evolve.</h2>
+        <p>Join the waitlist for architecture updates, development progress, alpha testing access, and early releases.</p>
+
+        <form id="waitlistForm">
+          <input type="email" id="email" placeholder="you@company.com" required />
+          <button type="submit">
+            Join Waitlist
+            <span class="arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+          <span class="pulse"></span> You're on the list. Symmbiote is evolving.
+        </div>
+
+        <small>Connect this form to Formspree, Supabase, ConvertKit, Beehiiv, or your preferred backend.</small>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-mark">
+      <span class="logo-mark" aria-hidden="true"></span>
+      SYMMBIOTE
+    </div>
+    <p>© 2026 — Local AI systems built for long-term operational intelligence.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
