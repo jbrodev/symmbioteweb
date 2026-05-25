@@ -1,5 +1,5 @@
 /* ============================================================
-   SYMMBIOTE — living, local-first AI operating system
+   SYMMBIOTE: living, local-first AI operating system
    Palette: deep ink + bioluminescent lime/mint
    ============================================================ */
 
@@ -116,10 +116,22 @@ body {
   border-bottom-color: var(--line);
 }
 
-.logo {
+.brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
+}
+
+.logo-mark-link { display: flex; }
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
+}
+
+.logo-word {
   font-weight: 700;
   letter-spacing: 0.18em;
   font-size: 0.95rem;
@@ -127,8 +139,18 @@ body {
   text-decoration: none;
 }
 
+.by-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+.by-link:hover { color: var(--accent-2); }
+
 .logo-mark {
-  height: 26px;
+  height: 30px;
   width: auto;
   display: block;
   filter: drop-shadow(0 0 7px rgba(166, 255, 46, 0.4));
@@ -887,6 +909,17 @@ footer p {
   color: var(--faint);
   font-size: 0.85rem;
   font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-link {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-2);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.footer-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* ============================================================

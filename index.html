@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Symmbiote — The AI that grows into your business</title>
-  <meta name="description" content="A fully local AI operating system that learns your workflows, memory, and voice — and compounds that intelligence over years, never leaving your machine." />
+  <title>Symmbiote: The AI that grows into your business</title>
+  <meta name="description" content="A fully local AI operating system that learns your workflows, memory, and voice, then compounds that intelligence over years, never leaving your machine." />
 
   <!-- Favicons & app icons -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -16,8 +16,8 @@
   <!-- Open Graph / Facebook / LinkedIn / iMessage -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Symmbiote" />
-  <meta property="og:title" content="Symmbiote — The AI that grows into your business" />
-  <meta property="og:description" content="A fully local AI operating system that learns your workflows, memory, and voice — and compounds that intelligence over years, never leaving your machine." />
+  <meta property="og:title" content="Symmbiote: The AI that grows into your business" />
+  <meta property="og:description" content="A fully local AI operating system that learns your workflows, memory, and voice, then compounds that intelligence over years, never leaving your machine." />
   <meta property="og:url" content="https://symm.studio/" />
   <meta property="og:image" content="https://symm.studio/assets/og-image.png" />
   <meta property="og:image:width" content="1500" />
@@ -25,8 +25,8 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Symmbiote — The AI that grows into your business" />
-  <meta name="twitter:description" content="A fully local AI operating system. It learns your workflows, memory, and voice — and never leaves your machine." />
+  <meta name="twitter:title" content="Symmbiote: The AI that grows into your business" />
+  <meta name="twitter:description" content="A fully local AI operating system that learns your workflows, memory, and voice. It never leaves your machine." />
   <meta name="twitter:image" content="https://symm.studio/assets/og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,10 +43,15 @@
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
-    <a class="logo" href="#top">
-      <img class="logo-mark" src="assets/symmbiote-mark.svg" alt="" aria-hidden="true" />
-      SYMMBIOTE
-    </a>
+    <div class="brand">
+      <a class="logo-mark-link" href="#top" aria-label="Symmbiote home">
+        <img class="logo-mark" src="assets/symmbiote-mark.svg" alt="" aria-hidden="true" />
+      </a>
+      <div class="brand-text">
+        <a class="logo-word" href="#top">SYMMBIOTE</a>
+        <a class="by-link" href="https://symm.studio" target="_blank" rel="noopener">by symm.studio</a>
+      </div>
+    </div>
 
     <nav class="nav-links">
       <a href="#vision">Vision</a>
@@ -75,7 +80,7 @@
 
         <p class="subheadline" data-reveal>
           Symmbiote is a fully local AI operating system that learns your
-          workflows, memory, and voice — then compounds that intelligence over
+          workflows, memory, and voice, then compounds that intelligence over
           years. No cloud. No data leaving your machine. A true symbiosis.
         </p>
 
@@ -106,7 +111,7 @@
       <div class="hero-card" data-reveal>
         <div class="terminal-header">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <em>symmbiote — boot</em>
+          <em>symmbiote · boot</em>
         </div>
         <pre id="terminal" aria-label="Symmbiote boot sequence"></pre>
       </div>
@@ -145,7 +150,7 @@
         <article class="glass-card" data-reveal>
           <span class="card-index">/03</span>
           <h3>Composable Architecture</h3>
-          <p>Capabilities, tools, plugins, memory systems, and workflows are all modular — designed for years of iteration, not a single demo.</p>
+          <p>Capabilities, tools, plugins, memory systems, and workflows are all modular, designed for years of iteration, not a single demo.</p>
         </article>
       </div>
     </section>
@@ -209,7 +214,7 @@
         <h2>A nervous system <span class="dim">built to grow on.</span></h2>
         <p class="section-sub">
           Every layer has one job and a stable contract. What ships today is the
-          foundation; what compounds over time is the moat — your memory and
+          foundation; what compounds over time is the moat: your memory and
           workflows, never flashy autonomous agents.
         </p>
       </div>
@@ -234,7 +239,7 @@
             </div>
           </header>
           <h3>100% Local Inference</h3>
-          <p>Powered by Ollama by default. Your prompts, data, and models stay on your machine — no cloud, nothing leaving the device.</p>
+          <p>Powered by Ollama by default. Your prompts, data, and models stay on your machine. No cloud, nothing leaving the device.</p>
           <span class="layer">llm</span>
         </article>
 
@@ -245,7 +250,7 @@
             </div>
           </header>
           <h3>Human-in-the-Loop</h3>
-          <p>Anything outward-facing — email, outreach, automation — waits for your approval. Bounded and deterministic: it asks before it acts.</p>
+          <p>Anything outward-facing (email, outreach, automation) waits for your approval. Bounded and deterministic: it asks before it acts.</p>
           <span class="layer">safety</span>
         </article>
 
@@ -256,7 +261,7 @@
             </div>
           </header>
           <h3>Swappable Providers &amp; Models</h3>
-          <p>A stable provider contract behind every backend. Add or switch models from a YAML file, validated against what's installed — with zero framework leakage.</p>
+          <p>A stable provider contract behind every backend. Add or switch models from a YAML file, validated against what's installed, with zero framework leakage.</p>
           <span class="layer">llm</span>
         </article>
 
@@ -278,7 +283,7 @@
             </div>
           </header>
           <h3>Local-First Storage</h3>
-          <p>Tasks, memory, settings, audit, and traces all live in local SQLite. You own every record — on disk, on your terms.</p>
+          <p>Tasks, memory, settings, audit, and traces all live in local SQLite. You own every record, on disk, on your terms.</p>
           <span class="layer">storage</span>
         </article>
 
@@ -289,7 +294,7 @@
             </div>
           </header>
           <h3>Full Observability</h3>
-          <p>Structured logs, an append-only audit trail, and execution trace spans wrap everything consequential — so you always know what it did and why.</p>
+          <p>Structured logs, an append-only audit trail, and execution trace spans wrap everything consequential, so you always know what it did and why.</p>
           <span class="layer">observability</span>
         </article>
 
@@ -311,7 +316,7 @@
             </div>
           </header>
           <h3>Native Desktop App</h3>
-          <p>Lives in your Windows taskbar with tray controls and hotkeys — always a keystroke away, never a browser tab.</p>
+          <p>Lives in your Windows taskbar with tray controls and hotkeys. Always a keystroke away, never a browser tab.</p>
           <span class="layer">gui</span>
         </article>
 
@@ -325,7 +330,7 @@
         <h2>Built to evolve, <span class="dim">deliberately.</span></h2>
         <p class="section-sub">
           Four phases, one stable spine. Each builds on the last without ever
-          rewriting it — the foundation ships first, the moat compounds after.
+          rewriting it. The foundation ships first, the moat compounds after.
         </p>
       </div>
 
@@ -341,7 +346,7 @@
               <span class="tl-status">Shipping now</span>
             </div>
             <h3>Foundation</h3>
-            <p>The clean, modular nervous system everything grows on — abstractions, config, the LLM provider, local-first storage, and full observability.</p>
+            <p>The clean, modular nervous system everything grows on: abstractions, config, the LLM provider, local-first storage, and full observability.</p>
           </div>
         </div>
 
@@ -353,7 +358,7 @@
               <span class="tl-status">Next</span>
             </div>
             <h3>Memory &amp; RAG</h3>
-            <p>Embeddings-backed long-term memory and retrieval — the moat. Accumulated workflows and company context that deepen with every task.</p>
+            <p>Embeddings-backed long-term memory and retrieval: the moat. Accumulated workflows and company context that deepen with every task.</p>
           </div>
         </div>
 
@@ -365,7 +370,7 @@
               <span class="tl-status">Planned</span>
             </div>
             <h3>Workflows &amp; Agents</h3>
-            <p>Bounded specialist workers, deterministic capability routing, and tools — orchestrated safely, always asking before they act.</p>
+            <p>Bounded specialist workers, deterministic capability routing, and tools. Orchestrated safely, always asking before they act.</p>
           </div>
         </div>
 
@@ -377,7 +382,7 @@
               <span class="tl-status">Planned</span>
             </div>
             <h3>Desktop GUI</h3>
-            <p>The real taskbar window — native Windows desktop integration with tray controls and hotkeys. Always a keystroke away.</p>
+            <p>The real taskbar window: native Windows desktop integration with tray controls and hotkeys. Always a keystroke away.</p>
           </div>
         </div>
       </div>
@@ -413,7 +418,10 @@
       <img class="logo-mark" src="assets/symmbiote-mark.svg" alt="" aria-hidden="true" />
       SYMMBIOTE
     </div>
-    <p>© 2026 — Local AI systems built for long-term operational intelligence.</p>
+    <p>
+      © 2026 Symmbiote · Local AI systems for long-term operational intelligence.
+      Built by <a href="https://symm.studio" target="_blank" rel="noopener" class="footer-link">symm.studio</a>.
+    </p>
   </footer>
 
   <script src="script.js"></script>

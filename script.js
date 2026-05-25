@@ -1,5 +1,5 @@
 /* ============================================================
-   SYMMBIOTE — interaction layer
+   SYMMBIOTE: interaction layer
    ============================================================ */
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
